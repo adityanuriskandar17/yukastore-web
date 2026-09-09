@@ -53,7 +53,7 @@
 				<span class="flex shrink-0 items-center overflow-hidden rounded-xl bg-black px-2 py-1 ring-1 ring-white/20">
 					<img src="/logo-navbar.jpeg" alt="Yuka Store" class="h-7 w-auto md:h-8" />
 				</span>
-				<span class="font-display truncate whitespace-nowrap text-base font-extrabold tracking-tight md:text-lg">Yuka Store</span>
+				<span class="font-display hidden whitespace-nowrap text-lg font-extrabold tracking-tight sm:inline">Yuka Store</span>
 			</a>
 			<nav class="hidden items-center gap-7 text-sm font-medium text-white/70 lg:flex">
 				<a href="#iphone" class="hover:text-white">iPhone</a>
