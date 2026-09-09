@@ -10,7 +10,11 @@
 	const waNumber = '628973744455';
 	const waDisplay = '0897-3744-455';
 	const address = 'Jl. Raya Bayongbong Muara Sanding No. 111, Garut';
-	const mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+	const mapsPlace = 'YUKASTORE, Sebrang Depo SS, Muara Sanding, Garut Kota';
+	// Link akurat dari pemilik (ada ulasan + foto)
+	const mapsShort = 'https://maps.app.goo.gl/BWbYTG8qjv48WTqV8?g_st=iw';
+	const mapsLink = mapsShort;
+	const mapsEmbed = `https://www.google.com/maps?q=${encodeURIComponent(mapsPlace)}&z=17&output=embed`;
 	const igHandle = 'yukastore__';
 	const tiktokHandle = 'yukastore__';
 	const waLink = (pesan: string) => `https://wa.me/${waNumber}?text=${encodeURIComponent(pesan)}`;
@@ -206,8 +210,25 @@
 	<!-- TOKO -->
 	<section id="toko" class="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
 		<h2 class="font-display text-center text-5xl font-black md:text-7xl">Mampir<span class="text-gradient"> & buktikan.</span></h2>
-		<p class="mt-3 text-center text-white/60">{address} • {waDisplay}</p>
-		<div class="mt-10 grid gap-4 md:grid-cols-2">
+		<p class="mt-3 text-center text-white/60">{mapsPlace}</p>
+		<p class="mt-1 text-center text-sm text-white/40">{address}</p>
+		<div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+			<a
+				href={mapsShort}
+				target="_blank"
+				class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-black transition hover:scale-105"
+			>
+				⭐ Lihat Ulasan Google
+			</a>
+			<a
+				href={mapsShort}
+				target="_blank"
+				class="glass inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-bold text-white transition hover:scale-105"
+			>
+				📷 Foto Toko di Maps
+			</a>
+		</div>
+		<div class="mt-8 grid gap-4 md:grid-cols-2">
 			<div class="group relative overflow-hidden rounded-[28px] border border-white/10">
 				<img src="/toko.jpeg" alt="toko" class="h-64 w-full object-cover transition duration-700 group-hover:scale-105 sm:h-80 md:h-[420px]" />
 				<div class="absolute inset-x-4 bottom-4 flex items-center justify-between rounded-2xl bg-black/60 p-4 backdrop-blur-xl">
@@ -217,8 +238,8 @@
 			</div>
 			<div class="overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.04]">
 				<iframe
-					title="maps"
-					src="https://www.google.com/maps?q={encodeURIComponent(address)}&output=embed"
+					title="Lokasi YUKASTORE Garut"
+					src={mapsEmbed}
 					class="h-[320px] w-full border-0"
 					loading="lazy"
 					allowfullscreen
