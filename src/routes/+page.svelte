@@ -47,13 +47,13 @@
 
 <!-- NAVBAR glass -->
 <header class="fixed inset-x-0 top-0 z-50">
-	<div class="mx-auto mt-3 flex h-16 max-w-6xl items-center justify-between px-4 md:px-6">
-		<div class="glass flex h-full w-full items-center justify-between rounded-2xl px-4 shadow-2xl">
-			<a href="#top" class="flex items-center gap-2.5">
-				<span class="flex items-center overflow-hidden rounded-xl bg-black px-2 py-1 ring-1 ring-white/20">
-					<img src="/logo-navbar.jpeg" alt="Yuka Store" class="h-8 w-auto" />
+	<div class="mx-auto mt-2 flex h-14 max-w-6xl items-center justify-between px-3 md:mt-3 md:h-16 md:px-6">
+		<div class="glass flex h-full w-full items-center justify-between gap-2 rounded-2xl px-3 shadow-2xl md:px-4">
+			<a href="#top" class="flex min-w-0 items-center gap-2">
+				<span class="flex shrink-0 items-center overflow-hidden rounded-xl bg-black px-2 py-1 ring-1 ring-white/20">
+					<img src="/logo-navbar.jpeg" alt="Yuka Store" class="h-7 w-auto md:h-8" />
 				</span>
-				<span class="font-display text-lg font-extrabold tracking-tight">Yuka Store<sup class="text-[10px] font-medium text-fuchsia-300">®</sup></span>
+				<span class="font-display truncate whitespace-nowrap text-base font-extrabold tracking-tight md:text-lg">Yuka Store</span>
 			</a>
 			<nav class="hidden items-center gap-7 text-sm font-medium text-white/70 lg:flex">
 				<a href="#iphone" class="hover:text-white">iPhone</a>
@@ -64,7 +64,7 @@
 			<a
 				href={waLink('Halo Yuka Store, mau tanya stok iPhone dong')}
 				target="_blank"
-				class="rounded-full bg-white px-5 py-2.5 text-sm font-bold text-black transition hover:scale-105 hover:bg-fuchsia-200"
+				class="shrink-0 whitespace-nowrap rounded-full bg-white px-4 py-2 text-[13px] font-bold text-black transition hover:scale-105 hover:bg-fuchsia-200 md:px-5 md:py-2.5 md:text-sm"
 			>
 				Chat WA ↗
 			</a>
@@ -81,12 +81,12 @@
 		<div class="animate-blob absolute bottom-0 left-1/3 h-[300px] w-[500px] rounded-full bg-fuchsia-600/25 blur-[130px]" style="animation-delay:-8s"></div>
 
 		<div class="relative mx-auto max-w-6xl px-4 md:px-6">
-			<p class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold tracking-[0.2em] text-white/70">
-				<span class="h-2 w-2 animate-pulse rounded-full bg-green-400"></span>
-				GARUT • SHOP & SERVICE • FOKUS IPHONE
+			<p class="inline-flex max-w-full flex-wrap items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-[10px] font-semibold tracking-[0.15em] text-white/70 md:px-4 md:text-xs md:tracking-[0.2em]">
+				<span class="h-2 w-2 shrink-0 animate-pulse rounded-full bg-green-400"></span>
+				<span class="break-words">GARUT • SHOP & SERVICE • FOKUS IPHONE</span>
 			</p>
 
-			<h1 class="font-display mt-6 text-[13vw] font-black leading-[0.9] md:text-[96px]">
+			<h1 class="font-display mt-6 text-[44px] font-black leading-[0.95] sm:text-6xl md:text-[96px] md:leading-[0.9]">
 				YUKA<br />
 				<span class="text-stroke">STORE—</span><br />
 				<span class="text-gradient">iPHONE LOVER.</span>
@@ -115,22 +115,22 @@
 				</div>
 			</div>
 
-			<!-- hero visual: di HP kartu TIDAK numpuk gambar -->
-			<div class="relative mt-10 md:mt-12">
+			<!-- hero visual: di HP kartu TIDAK numpuk gambar, banner full terlihat -->
+			<div class="relative mt-8 md:mt-12">
 				<img
 					src="/banner-toko.jpeg"
-					alt="Yuka Store"
-					class="h-52 w-full rounded-3xl border border-white/15 object-cover shadow-2xl sm:h-64 md:h-auto md:rotate-[-1deg] md:rounded-[28px]"
+					alt="Yuka Store Shop & Service - iPhone Baru Second Original"
+					class="h-auto w-full rounded-2xl border border-white/15 object-contain shadow-2xl md:rounded-[28px] md:object-cover"
 				/>
 				<!-- Mobile: kartu statis di bawah gambar -->
-				<div class="mt-3 grid grid-cols-2 gap-3 md:hidden">
-					<div class="glass rounded-2xl p-3">
+				<div class="mt-3 grid grid-cols-2 gap-2.5 md:hidden">
+					<div class="glass min-w-0 rounded-2xl p-3">
 						<p class="text-[10px] font-bold tracking-widest text-white/60">CEK 21 TITIK</p>
-						<p class="font-display text-base font-extrabold">100% Original ✓</p>
+						<p class="font-display truncate text-[15px] font-extrabold">100% Original ✓</p>
 					</div>
-					<div class="glass rounded-2xl p-3">
+					<div class="glass min-w-0 rounded-2xl p-3">
 						<p class="text-[10px] font-bold tracking-widest text-white/60">RATING</p>
-						<p class="font-display text-base font-extrabold">4.9★ • 2rb+</p>
+						<p class="font-display truncate text-[15px] font-extrabold">4.9★ • 2rb+</p>
 					</div>
 				</div>
 				<!-- Desktop: kartu melayang -->
@@ -209,7 +209,7 @@
 		<p class="mt-3 text-center text-white/60">{address} • {waDisplay}</p>
 		<div class="mt-10 grid gap-4 md:grid-cols-2">
 			<div class="group relative overflow-hidden rounded-[28px] border border-white/10">
-				<img src="/toko.jpeg" alt="toko" class="h-[420px] w-full object-cover transition duration-700 group-hover:scale-105" />
+				<img src="/toko.jpeg" alt="toko" class="h-64 w-full object-cover transition duration-700 group-hover:scale-105 sm:h-80 md:h-[420px]" />
 				<div class="absolute inset-x-4 bottom-4 flex items-center justify-between rounded-2xl bg-black/60 p-4 backdrop-blur-xl">
 					<p class="text-sm font-semibold">Etalase real • Coba sepuasnya</p>
 					<a href={waLink('Halo, saya mau mampir ke toko')} target="_blank" class="rounded-full bg-white px-4 py-2 text-xs font-bold text-black">Sharelok →</a>
@@ -276,12 +276,12 @@
 	href={waLink('Halo Yuka Store!')}
 	target="_blank"
 	aria-label="Chat WhatsApp Yuka Store"
-	class="fixed bottom-5 right-5 z-50 transition hover:scale-110 hover:rotate-6"
+	class="fixed bottom-4 right-4 z-50 transition hover:scale-110 md:bottom-5 md:right-5"
 >
 	<img
 		src="/whatsapp-logo.png"
 		alt="Chat WhatsApp"
-		class="h-15 w-15 rounded-full shadow-[0_10px_40px_rgba(37,211,102,0.5)]"
+		class="h-12 w-12 rounded-full shadow-[0_10px_40px_rgba(37,211,102,0.5)] md:h-[60px] md:w-[60px]"
 		width="60"
 		height="60"
 	/>
