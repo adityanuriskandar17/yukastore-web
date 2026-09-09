@@ -86,10 +86,10 @@
 				<span class="break-words">GARUT • SHOP & SERVICE • FOKUS IPHONE</span>
 			</p>
 
-			<h1 class="font-display mt-6 text-[44px] font-black leading-[0.95] sm:text-6xl md:text-[96px] md:leading-[0.9]">
-				YUKA<br />
-				<span class="text-stroke">STORE—</span><br />
-				<span class="text-gradient">iPHONE LOVER.</span>
+			<h1 class="font-display mt-6 text-[46px] font-black leading-[0.92] tracking-tight sm:text-6xl md:text-[96px] md:leading-[0.9]">
+				<span class="block">YUKA</span>
+				<span class="text-stroke block">STORE</span>
+				<span class="text-gradient block">iPHONE LOVER.</span>
 			</h1>
 
 			<div class="mt-8 grid gap-6 md:grid-cols-[1.2fr_0.8fr] md:items-end">
